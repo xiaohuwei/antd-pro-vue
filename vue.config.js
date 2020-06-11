@@ -38,7 +38,7 @@ const vueConfig = {
       new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
       new webpack.DefinePlugin({
         APP_VERSION: `"${require('./package.json').version}"`,
-        GIT_HASH: JSON.stringify(GitRevision.version()),
+        //GIT_HASH: JSON.stringify(GitRevision.version()),
         BUILD_DATE: buildDate
       })
     ],
